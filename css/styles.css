@@ -1,3 +1,63 @@
-nav li{
-  display:inline-grid;
+body{
+  text-align: center;
+}
+.background{
+  background-image: url(https://d1yn1kh78jj1rr.cloudfront.net/image/preview/VerQSYCteikar896b/storyblocks-two-pizzas-on-a-white-background-fragments-of-pizzas-on-the-edges-of-the-frame-and-with-free-space-in-the-center-menu_SuZp3QvsXE_SB_PM.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+nav{
+background-color:red;
+height:30px;
+width:100%;
+margin-bottom: 20px;
+}
+
+nav li {
+    display:inline;
+    margin-left:30px;
+    text-decoration:none;
+}
+
+nav li a{
+    padding:10px;
+    color:white;
+}
+nav>ul>li>a:hover{
+    box-shadow:0 0 10px;
+    font-family: 'Bungee Inline', cursive;
+  }
+.mama-golden{
+  color:red;
+  font-family: 'Faster One', cursive;
+}
+.pizza{
+  display:none;
+}
+.about{
+  font-family: 'Kameron', serif;
+}
+.h3{
+  padding-top: 10px;
+  font-family: 'Bungee Inline', cursive;
+}
+.services{
+font-family: 'Averia Serif Libre', cursive;
+}
+#place-order{
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/videoblocks-white-and-red-lines-3d-render-seamless-loop-background-4k-uhd-3840x2160_hodjoci4m_thumbnail-full01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+input[type="text"]{
+  background: transparent;
+}
+tr, td, th, table{
+ padding: 5px;
+ border: 1px solid black;
+ border-collapse: collapse;
+ margin-bottom:20px;
 }
