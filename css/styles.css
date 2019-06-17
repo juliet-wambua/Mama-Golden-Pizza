@@ -69,6 +69,6 @@ font-family: 'Averia Serif Libre', cursive;
   background-size: cover;
   text-align: center;
 }
-input[type="text"]{
+select[option="value"]{
   background: transparent;
 }
