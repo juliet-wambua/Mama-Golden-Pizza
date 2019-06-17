@@ -39,33 +39,42 @@
             <div class="small-icon">
               <img src="images/small pizza icon.png">
             </div>
-          <h2>Small pizza</h2>
+        <div id="small">
+           <h2>Small pizza @ $9.50 each</h2>
+        </div>
+          <p>Click on the icon to view images of small pizza</p>
           <div class="small pizza">
             <img src="images/small pizza.jpeg">
             <img src="images/mellow mushroom small pizza.jpeg">
-            <img src="images/Palo alto small pizza.jpeg">
+            <img src="images/Palo alto small pizza.jpeg" height="150">
           </div>
           </div>
         <div class="col-md-4">
           <div class="medium-icon">
             <img src="images/medium pizza icon.png">
           </div>
-          <h2>Medium Pizza</h2>
+          <div id="medium">
+            <h2>Medium Pizza @ $1.20 each</h2>
+          </div>
+            <p>Click on the icon to view images of medium-size pizza</p>
             <div class="medium pizza">
               <img src="images/beef spicy medium pizza.jpeg">
               <img src="images/medium pizza.jpeg">
-              <img src="images/medium size pizza.jpeg">
+              <img src="images/medium size pizza.jpeg" height="150">
             </div>
         </div>
         <div class="col-md-4">
           <div class="large-icon">
             <img src="images/large pizza icon.png"height="250">
           </div>
-          <h2>Large pizza</h2>
+          <div id="large">
+            <h2>Large pizza @ $1.85 each</h2>
+          </div>
+          <p>Click on the icon to view images of large-size pizza</p>
             <div class="large pizza">
               <img src="images/large 3 toppings pizza.jpg" height="250">
               <img src="images/large tripple toppings.jpg" height="180">
-              <img src="images/pepperoni-plus.jpg" height="200">
+              <img src="images/pepperoni-plus.jpg" height="180">
             </div>
         </div>
         </div>
@@ -81,33 +90,33 @@
               </tr>
               <tr>
                 <td>Pepperoni</td>
-                <td>$0.72</td>
-                <td>$1.00</td>
-                <td>$1.30</td>
+                <td id="pep-small">$0.72</td>
+                <td id="pep-mid">$1.00</td>
+                <td id="pep-lag">$1.30</td>
               </tr>
               <tr>
                 <td>Mushroom</td>
-                <td>$0.80</td>
-                <td>$1.10</td>
-                <td>$1.50</td>
+                <td id="mash-small">$0.80</td>
+                <td id="mash-mid">$1.10</td>
+                <td id="mash-lag">$1.50</td>
               </tr>
               <tr>
                 <td>Onions</td>
-                <td>$0.50</td>
-                <td>$0.82</td>
-                <td>$1.10</td>
+                <td id="on-small">$0.50</td>
+                <td id="on-mid">$0.82</td>
+                <td id="on-lag">$1.10</td>
               </tr>
               <tr>
-                <td>Sausages</td>
-                <td>$0.86</td>
-                <td>$1.25</td>
-                <td>$1.80</td>
+                <td id=>Sausages</td>
+                <td id="saus-small">$0.86</td>
+                <td id="saus-mid">$1.25</td>
+                <td id="saus-lag">$1.80</td>
               </tr>
               <tr>
-                <td>Pineapple</td>
-                <td>$0.70</td>
-                <td>$1.00</td>
-                <td>$1.50</td>
+                <td >Pineapple</td>
+                <td id="pine-small">$0.70</td>
+                <td id="pine-mid">$1.00</td>
+                <td id="pine-lag">$1.50</td>
               </tr>
             </table>
           </div>
@@ -116,71 +125,115 @@
             <table>
               <tr>
                 <th>Crust</th>
-                <th>Cost on Small pizza</th>
-                <th>Cost on Medium pizza</th>
-                <th>Cost on Large pizza</th>
+                <th id="crust-small">Cost on Small pizza</th>
+                <th id="crust-mid">Cost on Medium pizza</th>
+                <th id="crust-lag">Cost on Large pizza</th>
               </tr>
               <tr>
                 <td>Thick crust</td>
-                <td>$0.5</td>
-                <td>$0.7</td>
-                <td>$0.9</td>
+                <td id="thick-small">$0.5</td>
+                <td id="thick-mid">$0.7</td>
+                <td id="thick-lag">$0.9</td>
               </tr>
               <tr>
                 <td>Thin crust</td>
-                <td>$0.3</td>
-                <td>$0.5</td>
-                <td>$0.7</td>
+                <td id="thin-small">$0.3</td>
+                <td id="thin-mid">$0.5</td>
+                <td id="thin-lag">$0.7</td>
               </tr>
               <tr>
                 <td>Deep crust</td>
-                <td>$0.7</td>
-                <td>$0.9</td>
-                <td>$1.1</td>
+                <td id="deep-small">$0.7</td>
+                <td id="deep-mid">$0.9</td>
+                <td id="deep-lag">$1.1</td>
               </tr>
               <tr>
                 <td>Crust filled</td>
-                <td>$0.7</td>
-                <td>$0.9</td>
-                <td>$1.1</td>
+                <td id="filled-small">$0.7</td>
+                <td id="first-mid">$0.9</td>
+                <td id="first-lag">$1.1</td>
               </tr>
               <tr>
                 <td>Stuffed crust</td>
-                <td>$0.8</td>
-                <td>$1.0</td>
-                <td>$1.3</td>
+                <td id="stuffed-small">$0.8</td>
+                <td id="stuffed-mid">$1.0</td>
+                <td id="stuffed-lag">$1.3</td>
               </tr>
             </table>
           </div>
         </div>
-  <div id="place-order">
-    <form class="order">
-      <div class="form-group">
-        <label for="pizza-size">What size of pizza do you want?</label>
-        <input type="text" class="form-control" id="pizza-size" placeholder="small, medium or large...">
-        <label for="pizza-crust">What kind of crust do you want?</label>
-        <input type="text" class="form-control" id="pizza-crust" placeholder="thick, thin, deep, crust filled or stuffed...">
-        <label for="pizza-topping">Which topping would you like for your pizza?</label>
-        <input type="text" class="form-control" id="pizza-topping" placeholder="pepperoni, Mushrooms, Onions, Sausages, Pineapple...">
-        <label for="place-order">Do you wish to place your order now? Yes</label>
-        <input type="checkbox"  id="place-order"> <br>
-        <label for="delivery">Would you like us to deliver it at you doorstep? Yes</label>
-        <input type="checkbox"  id="delivery" Yes/No> <br>
-      </div>
     </form>
-    <form id="details">
-      <fieldset>
-        <legend>Personal information:</legend>
-        First name: <br>
-        <input type="text" id="first-name" placeholder="First name..."> <br>
-        Last name: <br>
-        <input type="text" last-name="" placeholder="Last name..."> <br>
-        Location: <br>
-        <input type="text" id="location" placeholder="county, city and street..."> <br> <br>
-        <button type="submit" class="btn">Submit</button>
-      </fieldset>
-    </form>
-  </div>
+    <form role="form" id="pizza-order">
+
+              <div class="radio">
+                <label><input type="radio" name="optradio1" value="small">Small:600sh</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio1" value="medium">Medium:800sh</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio1" value="large">Large:1000sh</label>
+              </div>
+
+              <h2>Choose your toppings. Each topping selected will add to price 200sh;</h2>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="pepperoni">
+                  Pepporoni
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="sausage">
+                  Sausage
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="bacon">
+                  Bacon
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="onion">
+                  Onion
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="cheese">
+                  Extra Cheese
+                </label>
+              </div>
+
+
+
+              <h2>what kind of crust would u like the pizza to have.Each crust selected will add to price 100sh;</h2>
+                  <div class="checkbox">
+                <label>
+                  <input type="radio" name = "me" value="crispy">
+                  Crispy
+                </label>
+                </div>
+                 <div class="checkbox">
+                <label>
+                  <input type="radio" name = "me" value="stuffed">
+                  Stuffed,
+                </label>
+              </div>
+                  <div class="checkbox">
+                <label>
+                  <input type="radio" name = "me" value="gluten">
+                  Gluten-free
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-success">Check Ur Total Order!</button>
+
+
+            </form>
     </div>
   </body>
 </html>

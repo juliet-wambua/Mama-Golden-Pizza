@@ -29,6 +29,9 @@ nav>ul>li>a:hover{
     box-shadow:0 0 10px;
     font-family: 'Bungee Inline', cursive;
   }
+  #details{
+    display: none;
+  }
 .mama-golden{
   color:red;
   font-family: 'Faster One', cursive;
