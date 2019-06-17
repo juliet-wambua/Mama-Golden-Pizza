@@ -1,4 +1,5 @@
 
+
 // User interface logic
 $(document).ready(function(){
   $(".small-icon").click(function(){
@@ -26,54 +27,29 @@ $(document).ready(function(){
     $(".large").hide();
   });
 });
-function Pizza(selectedSize,selectedToppings,selectedCrust) {
-  this.selectedSize = selectedSize;
-  this.selectedToppings = selectedToppings;
-  this.selectedCrust = selectedCrust;
-}
-Pizza.prototype.sizeCost = function() {
-  var sizes = {
-    small: 600,
-    medium: 800,
-    large: 1000
+  function Pizza(size, toppings1,crust){
+    this.size = size;
+    this.toppings1 = toppings1;
+    this.crust = crust;
   };
-  return sizes[this.selectedSize];
-}
-Pizza.prototype.toppingsCost = function() {
-  var totalToppingsCost = 0;
-  var toppings = {
-    pepperoni: 200,
-    sausage: 200,
-    bacon: 200,
-    cheese: 200,
-    onion: 200,
-  };
-  this.selectedToppings.forEach(function(topping) {
-    totalToppingsCost += toppings[topping];
-  });
-  return totalToppingsCost;
-}
-Pizza.prototype.crustCost = function() {
-  var crusts = {
-    crispy: 100,
-    stuffed: 100,
-    gluten: 100
-  };
-  return crusts[this.selectedCrust];
-}
-Pizza.prototype.pizzaCost = function() {
-  return this.sizeCost() + this.toppingsCost() + this.crustCost();
-}
-$(document).ready(function() {
-  $('#pizza-order').submit(function(event) {
-    event.preventDefault();
 
-    var size = $("input[name=optradio1]:checked").val();
-    var crust = $("input[name=me]:checked").val();
-    var toppings = [];
-    $("input:checkbox:checked").map(function(){
-      toppings.push($(this).val());
+  Pizza.prototype.price = function(){
+    var total = this.toppings1 + this.crust + this.size;
+    return total;
+  };
+
+
+  $(document).ready(function(){
+    $("#pizzaOrder").submit(function(event){
+      event.preventDefault();
+      var size = parseFloat($("#size").val());
+      var toppings1 = parseFloat($("#toppings1").val());
+      var crust = parseFloat($("#crust").val());
+      var userPizza = new Pizza(size,toppings1,crust);
+
+      $("#customerOrder").slideToggle(500);
+      $("ul").append("<li>" + "$" + userPizza.price().toFixed(2) + "</li>");
+      $("li").remove();
+      $("ul").append("<li>" + "$" + userPizza.price().toFixed(2) + "</li>");
     });
-    var userPizza = new Pizza(size,toppings,crust);
-    var grandTotal = userPizza.pizzaCost().toFixed(2);
-    $('#totalCost').text(grandTotal);
+  });
