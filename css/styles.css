@@ -72,9 +72,3 @@ font-family: 'Averia Serif Libre', cursive;
 input[type="text"]{
   background: transparent;
 }
-tr, td, th, table{
- padding: 5px;
- border: 1px solid black;
- border-collapse: collapse;
- margin-bottom:20px;
-}
