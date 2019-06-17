@@ -26,6 +26,10 @@ $(document).ready(function(){
     $(".large-icon").show();
     $(".large").hide();
   });
+  $("#order-button").click(function(){
+    $(".order").show();
+    $("#order-button").hide();
+  });
 });
   function Pizza(size, toppings1,crust){
     this.size = size;
@@ -51,5 +55,18 @@ $(document).ready(function(){
       $("ul").append("<li>" + "$" + userPizza.price().toFixed(2) + "</li>");
       $("li").remove();
       $("ul").append("<li>" + "$" + userPizza.price().toFixed(2) + "</li>");
+      alert("Thank you for choosing Mama Golden Pizza");
     });
+    $("#submittion").click(function(event){
+       var name = $("input#name").val();
+       var email =$("input#email").val();
+       var location=$("input#location").val();
+       if(name && email && location != " " ){
+           alert("Thank you" + name + " for your order.Your order will be delivered at " + location + "during the day ");
+       }
+       else{
+           alert("Kindly fill in your details in the inputs provided for delivery");
+       }
+       event.preventDefault();
+      });
   });
