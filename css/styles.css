@@ -36,8 +36,22 @@ nav>ul>li>a:hover{
   color:red;
   font-family: 'Faster One', cursive;
 }
+.order{
+  display: none;
+  text-align: center;
+}
 .pizza{
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/61/33/9157a73609f1383.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
   display:none;
+}
+.icon{
+  background-image: url(https://st3.depositphotos.com/8797398/12961/i/950/depositphotos_129611926-stock-photo-abstract-pink-watercolor-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 .about{
   font-family: 'Kameron', serif;
